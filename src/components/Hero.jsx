@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-gold text-sm font-semibold tracking-[0.3em] uppercase mb-6"
         >
-          GMNR Consultants
+          GMnR Consultants
         </motion.p>
 
         <motion.h1

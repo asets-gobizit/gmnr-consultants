@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-8">
             <span className="text-xl font-bold text-white/80 tracking-wider">
-              GMN<span className="text-gold/70">R</span>
+              GM<span className="text-white/40">n</span><span className="text-gold/70">R</span>
             </span>
             <span className="text-white/20 text-sm">
               Business Development, Outsourced
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-white/5 text-center">
           <p className="text-white/15 text-xs tracking-wide">
-            &copy; {new Date().getFullYear()} GMNR Consultants. All rights reserved. Tel Aviv, Israel.
+            &copy; {new Date().getFullYear()} GMnR Consultants. All rights reserved. Tel Aviv, Israel.
           </p>
         </div>
       </div>

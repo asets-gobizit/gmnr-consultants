@@ -26,7 +26,7 @@ export default function About() {
             <div className="relative z-10">
               <img
                 src={guyPhoto}
-                alt="Guy Molcho — Founder of GMNR Consultants"
+                alt="Guy Molcho — Founder of GMnR Consultants"
                 className="w-full max-w-lg object-cover"
                 style={{ aspectRatio: '4/5', objectPosition: 'center top' }}
               />
@@ -81,7 +81,7 @@ export default function About() {
                 structuring joint ventures and acquisition deals across Europe, Asia, and the Americas.
               </p>
               <p>
-                GMNR Consultants exists because not every company needs a full-time business development team —
+                GMnR Consultants exists because not every company needs a full-time business development team —
                 but every company deserves one that delivers.
               </p>
             </motion.div>

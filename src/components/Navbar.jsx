@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <a href="#" className="text-2xl font-bold text-white tracking-wider">
-          GMN<span className="text-gold">R</span>
+          GM<span className="text-white/50">n</span><span className="text-gold">R</span>
         </a>
 
         {/* Desktop nav */}
