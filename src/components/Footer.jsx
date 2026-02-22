@@ -1,12 +1,12 @@
+import Logo from './Logo'
+
 export default function Footer() {
   return (
     <footer className="bg-navy-dark py-12 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-8">
-            <span className="text-xl font-bold text-white/80 tracking-wider">
-              GM<span className="text-white/40">n</span><span className="text-gold/70">R</span>
-            </span>
+            <Logo size="sm" variant="light" />
             <span className="text-white/20 text-sm">
               Business Development, Outsourced
             </span>

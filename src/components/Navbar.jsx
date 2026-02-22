@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from './Logo'
 
 const links = [
   { label: 'About', href: '#about' },
@@ -29,8 +30,8 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <a href="#" className="text-2xl font-bold text-white tracking-wider">
-          GM<span className="text-white/50">n</span><span className="text-gold">R</span>
+        <a href="#">
+          <Logo size="sm" variant="light" />
         </a>
 
         {/* Desktop nav */}
