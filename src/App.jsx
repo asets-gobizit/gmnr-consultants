@@ -1,3 +1,4 @@
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Pain from './components/Pain'
@@ -8,11 +9,11 @@ import About from './components/About'
 import Blog from './components/Blog'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import BlogPost from './pages/BlogPost'
 
-function App() {
+function HomePage() {
   return (
-    <div className="bg-white text-navy-dark">
-      <Navbar />
+    <>
       <Hero />
       <Pain />
       <Solution />
@@ -21,8 +22,22 @@ function App() {
       <About />
       <Blog />
       <FinalCTA />
-      <Footer />
-    </div>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <div className="bg-white text-navy-dark">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
+        <Footer />
+      </div>
+    </HashRouter>
   )
 }
 

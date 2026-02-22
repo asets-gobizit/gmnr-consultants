@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 const posts = [
   {
@@ -40,25 +41,27 @@ function BlogCard({ post, index }) {
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7 }}
-        className="md:col-span-2 group cursor-pointer"
+        className="md:col-span-2 group"
       >
-        <div className="bg-navy p-10 md:p-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light/20 to-navy" />
-          <div className="relative z-10">
-            <p className="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-6">
-              Featured &middot; {post.date}
-            </p>
-            <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight mb-5 group-hover:text-gold transition-colors duration-300" style={{ fontFamily: 'var(--font-serif)' }}>
-              {post.title}
-            </h3>
-            <p className="text-white/50 text-lg leading-relaxed max-w-2xl mb-8">
-              {post.excerpt}
-            </p>
-            <span className="text-gold text-sm font-semibold tracking-widest uppercase">
-              Read Article &rarr;
-            </span>
+        <Link to={`/blog/${post.slug}`} className="block">
+          <div className="bg-navy p-10 md:p-16 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light/20 to-navy" />
+            <div className="relative z-10">
+              <p className="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-6">
+                Featured &middot; {post.date}
+              </p>
+              <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight mb-5 group-hover:text-gold transition-colors duration-300" style={{ fontFamily: 'var(--font-serif)' }}>
+                {post.title}
+              </h3>
+              <p className="text-white/50 text-lg leading-relaxed max-w-2xl mb-8">
+                {post.excerpt}
+              </p>
+              <span className="text-gold text-sm font-semibold tracking-widest uppercase">
+                Read Article &rarr;
+              </span>
+            </div>
           </div>
-        </div>
+        </Link>
       </motion.article>
     )
   }
@@ -69,22 +72,24 @@ function BlogCard({ post, index }) {
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, delay: index * 0.1 }}
-      className="group cursor-pointer"
+      className="group"
     >
-      <div className="bg-white p-8 md:p-10 border border-warm-gray h-full hover:border-gold/30 transition-all duration-300">
-        <p className="text-navy/30 text-xs font-semibold tracking-[0.2em] uppercase mb-5">
-          {post.date}
-        </p>
-        <h3 className="text-lg md:text-xl font-bold text-navy leading-snug mb-4 group-hover:text-gold-dark transition-colors duration-300" style={{ fontFamily: 'var(--font-serif)' }}>
-          {post.title}
-        </h3>
-        <p className="text-navy/45 leading-relaxed text-sm mb-6">
-          {post.excerpt}
-        </p>
-        <span className="text-gold-dark text-xs font-semibold tracking-widest uppercase">
-          Read more &rarr;
-        </span>
-      </div>
+      <Link to={`/blog/${post.slug}`} className="block h-full">
+        <div className="bg-white p-8 md:p-10 border border-warm-gray h-full hover:border-gold/30 transition-all duration-300">
+          <p className="text-navy/30 text-xs font-semibold tracking-[0.2em] uppercase mb-5">
+            {post.date}
+          </p>
+          <h3 className="text-lg md:text-xl font-bold text-navy leading-snug mb-4 group-hover:text-gold-dark transition-colors duration-300" style={{ fontFamily: 'var(--font-serif)' }}>
+            {post.title}
+          </h3>
+          <p className="text-navy/45 leading-relaxed text-sm mb-6">
+            {post.excerpt}
+          </p>
+          <span className="text-gold-dark text-xs font-semibold tracking-widest uppercase">
+            Read more &rarr;
+          </span>
+        </div>
+      </Link>
     </motion.article>
   )
 }
