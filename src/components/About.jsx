@@ -27,11 +27,13 @@ export default function About() {
               <img
                 src={guyPhoto}
                 alt="Guy Molcho — Founder of GMnR Consultants"
-                className="w-full max-w-lg object-contain"
+                className="w-full max-w-lg object-cover object-top"
+                style={{ aspectRatio: '3/4' }}
               />
             </div>
             {/* Decorative gold frame offset */}
-            <div className="absolute -bottom-6 -right-6 w-full max-w-lg h-full border-2 border-gold/20 z-0"
+            <div className="absolute -bottom-6 -right-6 w-full max-w-lg border-2 border-gold/20 z-0"
+              style={{ aspectRatio: '3/4' }}
             />
           </motion.div>
 
