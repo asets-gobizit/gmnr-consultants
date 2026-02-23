@@ -52,7 +52,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-navy/95 backdrop-blur-md shadow-2xl' : 'bg-transparent'
+        scrolled || !isHome ? 'bg-navy/95 backdrop-blur-md shadow-2xl' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
