@@ -209,7 +209,7 @@ export default {
     },
     hero: {
       label: 'Carbon & European Energy Markets',
-      heading: 'Carbon Is Now a Balance Sheet Item',
+      heading: 'Carbon and ETS in Europe: What Spanish Companies Need to Know.',
       description: 'The EU Emissions Trading System covers approximately 11,000 installations across the EU, Norway, Iceland, and Liechtenstein. It has turned carbon emissions into a tradable financial liability \u2014 one that now sits at the centre of energy procurement, asset valuation, and long-term competitiveness for companies operating in Europe.',
     },
     coreMechanism: {

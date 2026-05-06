@@ -209,7 +209,7 @@ export default {
     },
     hero: {
       label: 'Carbono y Mercados Energ\u00E9ticos Europeos',
-      heading: 'El Carbono Ya Es una Partida del Balance',
+      heading: 'Carbono y ETS de Europa: Lo que las empresas espa\u00F1olas deben saber.',
       description: 'El Sistema de Comercio de Emisiones de la UE cubre aproximadamente 11.000 instalaciones en la UE, Noruega, Islandia y Liechtenstein. Ha convertido las emisiones de carbono en un pasivo financiero negociable \u2014 que ahora se sit\u00FAa en el centro de la adquisici\u00F3n de energ\u00EDa, la valoraci\u00F3n de activos y la competitividad a largo plazo de las empresas que operan en Europa.',
     },
     coreMechanism: {
